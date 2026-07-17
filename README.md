@@ -15,7 +15,7 @@ Capacitar estudantes a validarem as leis da gravidade autonomamente por meio de 
 
 ### Objetivos específicos
 
-Para alcançar esses objetivos, o projeto prevê o desenvolvimento do firmware no ESP32 focado na leitura das barreiras ópticas via interrupções de hardware e na renderização dos gráficos no display LCD TFT, em paralelo ao design e fabricação da estrutura física da torre por meio de impressão 3D e corte CNC para assegurar o alinhamento perfeito dos sensores e do fim de curso. O protótipo será validado inicialmente em bancada através da comparação entre a aceleração medida pelo sistema e o valor real da gravidade ($g \approx 9,8\text{ m/s}^2$) para fins de calibração. Por fim, sua avaliação prática e documentação definitiva ocorrerão durante a feira de inovação **IFTech**, onde a interação direta de estudantes e visitantes com o dispositivo servirá como teste real de usabilidade da interface gráfica, robustez do hardware e eficácia pedagógica da automação.
+Para alcançar esses objetivos, o projeto prevê o desenvolvimento do firmware no ESP32 focado na leitura das barreiras ópticas via interrupções de hardware e na renderização dos gráficos no display LCD TFT, em paralelo ao design e fabricação da estrutura física da torre por meio de impressão 3D e corte CNC para assegurar o alinhamento perfeito dos sensores e do fim de curso. O protótipo será validado inicialmente em bancada através da comparação entre a aceleração medida pelo sistema e o valor real da gravidade ($g \approx 9,8\text{ m/s}^2$) para fins de calibração. Por fim, sua avaliação prática e documentação definitiva ocorrerão durante a feira de inovação **XIV IFTECH**, onde a interação direta de estudantes e visitantes com o dispositivo servirá como teste real de usabilidade da interface gráfica, robustez do hardware e eficácia pedagógica da automação.
 
 ## Público-alvo e possibilidades de aplicação
 
@@ -26,7 +26,7 @@ Para alcançar esses objetivos, o projeto prevê o desenvolvimento do firmware n
 
 ## Resultados esperados
 
-Espera-se desenvolver um protótipo funcional de uma Torre Vertical de Queda Livre Automatizada, construída com peças modulares em impressão 3D e corte CNC, integrada a um microcontrolador ESP32 com sensores de barreira de luz, um sensor de fim de curso na base, um eletroímã no topo para liberação controlada e sem impulso da esfera metálica, e um display LCD TFT acoplado. Esse dispositivo favorecerá a aprendizagem ao eliminar totalmente o erro humano de medição e de disparo manual, permitindo que os estudantes visualizem os gráficos e parábolas do MRUV sendo esboçados em tempo real na tela ao lado da estrutura, consolidando a transição do conceito abstrato da gravidade para dados empíricos visuais de forma multissensorial. Além disso, após sua validação e apresentação pública na IX IFTECH, o projeto possui alto potencial de replicação e compartilhamento, pois todo o código-fonte, esquemáticos eletrônicos e arquivos de modelagem digital serão disponibilizados de forma open-source, funcionando como um kit didático de baixo custo que pode ser facilmente adaptado ou reproduzido por outros laboratórios de ensino e estudantes.
+Espera-se desenvolver um protótipo funcional de uma Torre Vertical de Queda Livre Automatizada, construída com peças modulares em impressão 3D e corte CNC, integrada a um microcontrolador ESP32 com sensores de barreira de luz, um sensor de fim de curso na base, um eletroímã no topo para liberação controlada e sem impulso da esfera metálica, e um display LCD TFT acoplado. Esse dispositivo favorecerá a aprendizagem ao eliminar totalmente o erro humano de medição e de disparo manual, permitindo que os estudantes visualizem os gráficos e parábolas do MRUV sendo esboçados em tempo real na tela ao lado da estrutura, consolidando a transição do conceito abstrato da gravidade para dados empíricos visuais de forma multissensorial. Além disso, após sua validação e apresentação pública na XIV IFTECH, o projeto possui alto potencial de replicação e compartilhamento, pois todo o código-fonte, esquemáticos eletrônicos e arquivos de modelagem digital serão disponibilizados de forma open-source, funcionando como um kit didático de baixo custo que pode ser facilmente adaptado ou reproduzido por outros laboratórios de ensino e estudantes.
 
 ## Fundamentação e integração de conhecimentos
 
@@ -139,7 +139,7 @@ A adoção desse percurso comum busca:
 | Código-fonte | Calculo de tempo e dos valores desejados para fazer o gráfico | [`codigos/`](codigos/) | Em elaboração |
 | Modelo 3D | Modelos 3Ds das diversas partes da torre | [`modelos-3d/`](modelos-3d/) | Em elaboração |
 | Imagens | Fotos da torre e dos gráficos | [`imagens/`](imagens/) | Previsto |
-| Resultados | Exposição no IX IFTECH | [`resultados/`](resultados/) | Previsto |
+| Resultados | Exposição no XIV IFTECH | [`resultados/`](resultados/) | Previsto |
 
 > [!NOTE]
 > **Possibilidades de replicação:** Ao término do projeto todos os materiais, modelos e códigos serão disponibilizados gratuitamente para replicação mediante a devida creditação, sem necessidade de licença ou autorização.
