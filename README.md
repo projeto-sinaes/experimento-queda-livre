@@ -1,80 +1,72 @@
-<!-- Substitua as orientações entre colchetes -->
 
-# [INSIRA O TÍTULO DO PROJETO]
+# Sistema Automatizado para Demonstração Experimental da Queda Livre 
 
 > Projeto vinculado ao SINAES – Soluções Inclusivas para Necessidades de Aprendizagem Específicas.
 
 ## Apresentação
 
-[Contextualize brevemente o tema e a área de aprendizagem relacionada ao projeto.]
-[Descreva o problema, a dificuldade ou a barreira de aprendizagem identificada e explique suas possíveis consequências para os estudantes.]
-[Apresente brevemente o material didático ou protótipo proposto como resposta ao problema identificado.]
-[Justifique a relevância do desenvolvimento da proposta para a aprendizagem, a inclusão ou a prática pedagógica.]
+O estudo do Movimento Retilíneo Uniformemente Variado (MRUV) e da Queda Livre na física mecânica frequentemente esbarra na barreira da abstração teórica, pois a velocidade com que os corpos caem impede medições manuais precisas, gerando erros gigantescos por causa do tempo de reação humana com cronômetros comuns. Essa limitação frustra os estudantes e os afasta da investigação científica real, forçando-os à memorização passiva de fórmulas. Como resposta a esse problema, propõe-se o desenvolvimento de uma Torre Vertical de Queda Livre Automatizada que combina um eletroímã, múltiplos sensores ópticos de barreira de luz ao longo do percurso com um sensor de fim de curso na base de impacto, conectados a um display LCD TFT posicionado ao lado da estrutura. Gerenciado por um microcontrolador ESP32, o sistema registra com precisão de microssegundos o instante em que o objeto rompe os feixes e o momento do choque final, processando esses dados instantaneamente para esboçar os gráficos de posição e velocidade em tempo real diretamente na tela. Essa solução é altamente relevante pois alia a engenharia à prática pedagógica inclusiva e ao Desenho Universal para a Aprendizagem (DUA), permitindo que estudantes com diferentes capacidades motoras participem de forma autônoma e visualizem o tempo físico invisível se transformar imediatamente em curvas e parábolas dinâmicas na bancada.
 
 ## Objetivo geral e objetivos específicos
 
 ### Objetivo geral
 
-[Informe, em uma frase, o principal resultado que o projeto pretende alcançar.]
+Capacitar estudantes a validarem as leis da gravidade autonomamente por meio de uma torre automatizada que transforma a queda livre em gráficos
 
 ### Objetivos específicos
 
-- [Indique uma ação necessária para alcançar o objetivo geral.]
-- [Indique outra ação necessária.]
-- [Indique como o material ou protótipo será testado, avaliado ou documentado.]
+Para alcançar esses objetivos, o projeto prevê o desenvolvimento do firmware no ESP32 focado na leitura das barreiras ópticas via interrupções de hardware e na renderização dos gráficos no display LCD TFT, em paralelo ao design e fabricação da estrutura física da torre por meio de impressão 3D e corte CNC para assegurar o alinhamento perfeito dos sensores e do fim de curso. O protótipo será validado inicialmente em bancada através da comparação entre a aceleração medida pelo sistema e o valor real da gravidade ($g \approx 9,8\text{ m/s}^2$) para fins de calibração. Por fim, sua avaliação prática e documentação definitiva ocorrerão durante a feira de inovação **IFTech**, onde a interação direta de estudantes e visitantes com o dispositivo servirá como teste real de usabilidade da interface gráfica, robustez do hardware e eficácia pedagógica da automação.
 
 ## Público-alvo e possibilidades de aplicação
 
-- **Público-alvo:** [Informe quem poderá utilizar ou ser beneficiado pelo material.]
-- **Áreas ou componentes curriculares:** [Informe as áreas de aplicação.]
-- **Conteúdos favorecidos:** [Indique os conteúdos que poderão ser explorados.]
-- **Possibilidades de aplicação:** [Aulas, oficinas, eventos, laboratórios, formação docente etc.]
+- **Público-alvo:** alunos do ensino médio e superior.
+- **Áreas ou componentes curriculares:** Física.
+- **Conteúdos favorecidos:** física, Lei da Gravidade, MRUV, Leis de Newton e queda livre.
+- **Possibilidades de aplicação:** Aulas, eventos e laboratórios.
 
 ## Resultados esperados
 
-- [Informe o material, modelo ou protótipo que se espera desenvolver.]
-- [Indique de que maneira ele poderá favorecer a aprendizagem.]
-- [Indique possibilidades de utilização, compartilhamento, adaptação ou replicação.]
+Espera-se desenvolver um protótipo funcional de uma Torre Vertical de Queda Livre Automatizada, construída com peças modulares em impressão 3D e corte CNC, integrada a um microcontrolador ESP32 com sensores de barreira de luz, um sensor de fim de curso na base, um eletroímã no topo para liberação controlada e sem impulso da esfera metálica, e um display LCD TFT acoplado. Esse dispositivo favorecerá a aprendizagem ao eliminar totalmente o erro humano de medição e de disparo manual, permitindo que os estudantes visualizem os gráficos e parábolas do MRUV sendo esboçados em tempo real na tela ao lado da estrutura, consolidando a transição do conceito abstrato da gravidade para dados empíricos visuais de forma multissensorial. Além disso, após sua validação e apresentação pública na IFTech, o projeto possui alto potencial de replicação e compartilhamento, pois todo o código-fonte, esquemáticos eletrônicos e arquivos de modelagem digital serão disponibilizados de forma open-source, funcionando como um kit didático de baixo custo que pode ser facilmente adaptado ou reproduzido por outros laboratórios de ensino e estudantes.
 
 ## Fundamentação e integração de conhecimentos
 
 ### Conhecimentos curriculares relacionados ao projeto
 
-[Apresente os principais conceitos da área ou do componente curricular relacionados ao problema de aprendizagem e ao funcionamento do material ou protótipo.]
+Velocidade, aceleração da gravidade, Movimento Retilíneo Uniformemente Variado (MRUV) e equações da Cinemática, temporização em microcontroladores, computação gráfica para renderização de curvas em displays TFT.
 
 ### Conhecimentos pedagógicos e metodológicos
 
-- **O estudante poderá:** [observar, tocar, montar, testar, ouvir, movimentar etc.]
-- **O material ajuda a compreender:** [conteúdo ou conceito.]
-- **A dificuldade que procura reduzir é:** [dificuldade ou barreira.]
-- **O conteúdo será apresentado por meio de:** [texto, imagem, som, cor, relevo, objetos etc.]
-- **O estudante poderá demonstrar o que aprendeu por meio de:** [explicação, montagem, teste, desenho, apresentação etc.]
+- **O estudante poderá:** observar, testar, ouvir.
+- **O material ajuda a compreender:** as funções horárias da posição e da velocidade no MRUV, o conceito de aceleração constante da gravidade e a tradução geométrica de uma aceleração em uma parábola gráfica.
+- **A dificuldade que procura reduzir é:** a barreira de abstração e imprecisão gerada pelo tempo de reação humano ao usar cronômetros manuais, o erro experimental em medições dinâmicas de queda livre.
+- **O conteúdo será apresentado por meio de:** objetos físicos tridimensionais, cores contrastantes no display LCD TFT, dados numéricos de tempo com precisão de microssegundos e o estímulo auditivo do impacto na base.
+- **O estudante poderá demonstrar o que aprendeu por meio de:** testes práticos repetíveis na bancada, explicações baseadas nos coeficientes das parábolas geradas na tela e cálculos comparativos da aceleração local da gravidade.
 
 ### Conhecimentos técnicos mobilizados
-<!-- Apague os itens que não forem aplicáveis ao projeto. -->
-[Identifique somente os conhecimentos técnicos efetivamente utilizados na elaboração da solução e explique a função de cada um.]
 
-- **Programação:** [Explique como foi utilizada.]
-- **Eletrônica:** [Explique como foi utilizada.]
-- **Robótica ou automação:** [Explique como foi utilizada.]
-- **Modelagem:** [Explique como foi utilizada.]
-- **Impressão 3D:** [Explique como foi utilizada.]
-- **Corte CNC:** [Explique como foi utilizado.]
-- **Outros:** [Informe e explique.]
+- **Programação:** Desenvolvimento do firmware no ESP32 com interrupções de hardware para cronometragem em microssegundos e renderização dos gráficos de MRUV em tempo real no display TFT.
+- **Eletrônica:** Circuitos de potência com transistor para acionamento do eletroímã.
+- **Automação:** Desligando o eletroímã para soltar a esfera e encerrando a coleta de dados no instante do impacto mecânico na base.
+- **Modelagem:** Empregada no design (CAD) de todas as partes do protótipo, como os suportes modulares das barreiras ópticas, o encaixe do eletroímã no topo e o gabinete do display TFT.
+- **Impressão 3D:** Para realizar a manufatura das peças previamente modeladas (CAD), garantindo fixação, suportes de sensores sob medida e uma estrutura modular leve e alinhada.
+- **Corte CNC:** Usinagem precisa da base de impacto e das réguas de sustentação vertical da torre em MDF
 
 
 ### Integração dos conhecimentos na solução
-[Explique como os conhecimentos curriculares, pedagógicos e técnicos foram articulados para transformar o problema de aprendizagem identificado em uma solução concreta.]
+
+A transformação da barreira de abstração da gravidade em uma solução concreta ocorreu pela articulação direta entre a física, a pedagogia e a engenharia. Os **conhecimentos curriculares** de cinemática (MRUV) definiram os requisitos matemáticos que o sistema precisava processar, enquanto os **conhecimentos pedagógicos** baseados no DUA (Desenho Universal para a Aprendizagem) guiaram a criação de uma experiência multissensorial que elimina a frustração dos cronômetros manuais por meio de estímulos visuais e auditivos. Viabilizando essa proposta, os **conhecimentos técnicos** materializaram o hardware e o software: a **modelagem CAD** e o **corte CNC** estruturaram a torre, a **impressão 3D** fabricou os suportes modulares para os sensores ópticos da **eletrônica**, e a **programação** no ESP32 unificou tudo via **automação**, gerenciando o disparo do eletroímã, capturando o tempo em microssegundos até o impacto no fim de curso e plotando instantaneamente as parábolas no display TFT para que os estudantes comprovem as leis da física sem a interferência do erro humano.
 
 ### Diferentes formas de aprendizagem
 
-[Explique como o projeto contempla diferentes formas de representação, participação, interação ou expressão da aprendizagem.]
-- **Formas de representação:** [Como o conteúdo é apresentado visualmente, pelo tato, por áudio, por objetos, textos, símbolos etc.]
-- **Formas de participação e interação:** [Como o estudante manipula, explora, observa ou participa da atividade.]
-- **Formas de ação e expressão:** [Como o estudante poderá demonstrar o que compreendeu.]
+- **Formas de representação:** A aceleração da gravidade deixa de ser uma teoria invisível e assume características multissensoriais. Visualmente, o display LCD TFT ao lado da torre esboça as curvas e parábolas do MRUV em tempo real utilizando cores contrastantes para diferenciar os gráficos de posição e velocidade, enquanto objetos físicos reais — a esfera metálica em queda livre e os sensores dispostos verticalmente — materializam o espaço percorrido; e auditivamente, o estalo mecânico do impacto da esfera contra o fim de curso na base fornece um feedback imediato do encerramento da contagem de tempo.
+- **Formas de participação e interação:** O estudante atua como protagonista e investigador ativo do próprio aprendizado através do manuseio livre do dispositivo. Ele interage diretamente com o experimento ao posicionar a esfera no eletroímã do topo e iniciar o disparo automatizado via microcontrolador.
+- **Formas de ação e expressão:** A validação do conhecimento ocorre de maneira flexível e prática, rompendo com os modelos de avaliações escritas tradicionais e equações decoradas. O aluno demonstra o que compreendeu ao operar com autonomia o sistema de controle, ao calibrar o protótipo comparando os dados da tela com a aceleração real da gravidade, ou ao explicar os fenômenos físicos e mecânicos observados por meio de apresentações orais e discussões baseadas nos coeficientes das funções plotadas diretamente no display TFT.
 
 ### Referências consultadas
-- [Informe livros, artigos, páginas institucionais, manuais técnicos ou outras fontes utilizadas.]
+
+HALLIDAY, David; RESNICK, Robert; WALKER, Jearl. Fundamentos de Física, Volume 1: Mecânica. 10. ed. Rio de Janeiro: LTC, 2016.
+
+ESPRESSIF SYSTEMS. ESP32 Technical Reference Manual. Versão 4.6. Espressif Systems, 2023.
 
 ## Percurso metodológico do projeto SINAES
 
@@ -101,69 +93,76 @@ A adoção desse percurso comum busca:
 
 | Etapa do PDP | Período planejado | Período realizado | Atividades desenvolvidas | Alterações, retornos ou sobreposições |
 |---|---|---|---|---|
-| Geração do conceito | [Data/período] | [Data/período] | [Atividades] | [Registre mudanças ou relação com outras etapas] |
-| Planejamento e especificação | [Data/período] | [Data/período] | [Atividades] | [Registre mudanças ou relação com outras etapas] |
-| Desenvolvimento incremental | [Data/período] | [Data/período] | [Atividades] | [Registre mudanças ou relação com outras etapas] |
-| Validação e aperfeiçoamento | [Data/período] | [Data/período] | [Atividades] | [Registre mudanças ou relação com outras etapas] |
+| Geração do conceito | novembro/2025 | novembro/2025 | Conversa com professor de física | definir a ideia inicial |
+| Planejamento e especificação | maio/2026 | junho/2026 | desenvolvimento de esboços e reuniões com a equipe que está realizando o projeto | Mudança de sensores ultrassônicos para sensores ópticos |
+| Desenvolvimento incremental | segundo semestre 2026 |  | montagem do protótipo |  |
+| Validação e aperfeiçoamento | segundo semestre 2026 |  | aperfeiçoamento do protótipo |  |
 
 ## Capacitações, tecnologias, materiais e orçamento
 
 | Capacitação | Finalidade no projeto | Período | Situação |
 |---|---|---|---|
-| [Capacitação] | [Por que foi necessária] | [mm/aaaa] | [Prevista / Em andamento / Concluída] |
-| [Capacitação] | [Por que foi necessária] | [mm/aaaa] | [Prevista / Em andamento / Concluída] |
+| Aulas ESP-IDF | Introduzir e ensinar os alunos a programar o ESP32 por meio do VS Code usando a ESP-IDF | abril,maio/2026 | Concluída |
+| Aula soldagem eletrônica | Ensinar a base da soldagem em componentes eletrônicos e placas de prototipação | junho/2026 | Concluída |
+| Aula Impressão 3D | Ensinar fatiamento e comandos básicos com impressora 3D | junho/2026 | Concluída |
+| Aula CNC | Ensinar a comandar e operar CNC | agosto/2026 | Prevista |
 
 ### Tecnologias, ferramentas e equipamentos
 
 | Tecnologia, ferramenta ou equipamento | Finalidade no projeto | Forma de acesso |
 |---|---|---|
-| [Software, impressora, máquina, instrumento etc.] | [Como será utilizado] | [Disponível no campus / Empréstimo / Aquisição / Outro] |
-| [Software, impressora, máquina, instrumento etc.] | [Como será utilizado] | [Forma de acesso] |
+| Impressora 3D | Impressão de partes do projeto | Disponível no campus |
+| Fusion360 | Modelar as peças para impressão 3D ou corte CNC | Disponível no campus |
+| CNC | Corte da base em MDF | Disponível no campus |
+| VS Code | Programar usando a ESP-IDF por meio dele | Disponível sem custo |
 
 ### Materiais e orçamento
 
-<!-- Preencha os valores somente quando houver necessidade de aquisição. -->
 
 | Material ou componente | Quantidade | Finalidade | Disponibilidade | Valor estimado |
 |---|---:|---|---|---:|
-| [Item] | [Quantidade] | [Como será utilizado] | [Disponível / Necessita aquisição] | R$ [valor] |
-| [Item] | [Quantidade] | [Como será utilizado] | [Disponível / Necessita aquisição] | R$ [valor] |
-| **Total estimado** |  |  |  | **R$ [total]** |
+| ESP32 | 1 | Calculo de tempo e dos valores desejados para fazer o gráfico | Adquirido na 1ª edição do projeto | |
+| inserts de latão | 6 | possibilitar utilização de parafusos | Adquirido na 1ª edição do projeto |  |
+| parafusos | 6 | prender a estrutura a base | Adquirido na 1ª edição do projeto |  |
+| Eletroímã | 1 | segurar a esfera metálica e soltar no tempo preciso | Adquirido na 1ª edição do projeto |  |
+| Sensores ópticos | 5 | fornecer dados sobre a queda | Adquirido na 1ª edição do projeto |  |
+| Chapa de MDF | 3 | para a base e suportes verticais | Adquirido na 1ª edição do projeto |  |
+| Filamento PLA | 300g | suportes para sensores, display e eletroímã | Adquirido na 1ª edição do projeto |  |
+| **Total estimado** |  |  |  |  |
 
 ## Artefatos do projeto
 
-[Relacione os arquivos, documentos e demais produtos gerados durante o desenvolvimento. Acrescente ou exclua linhas conforme necessário.]
 
 | Artefato | Descrição | Formato ou localização | Situação |
 |---|---|---|---|
-| Apresentação do projeto | [Breve descrição] | [`apresentacao/`](apresentacao/) | [Previsto / Em elaboração / Disponível] |
-| Documentação | [Relatórios, fichas técnicas ou orientações] | [`documentacao/`](documentacao/) | [Situação] |
-| Material didático | [Descrição do material] | [`materiais-didaticos/`](materiais-didaticos/) | [Situação] |
-| Código-fonte | [Descrição do código] | [`codigos/`](codigos/) | [Situação] |
-| Modelo 3D | [Descrição do modelo] | [`modelos-3d/`](modelos-3d/) | [Situação] |
-| Imagens | [Registros autorizados] | [`imagens/`](imagens/) | [Situação] |
-| Resultados | [Testes, avaliações ou evidências] | [`resultados/`](resultados/) | [Situação] |
-| Outros | [Descrição] | [Arquivo, pasta ou endereço] | [Situação] |
+| Apresentação do projeto | Experimento (torre) de queda livre e MRUV | [`apresentacao/`](apresentacao/) | Disponível |
+| Código-fonte | Calculo de tempo e dos valores desejados para fazer o gráfico | [`codigos/`](codigos/) | Em elaboração |
+| Modelo 3D | Modelos 3Ds das diversas partes da torre | [`modelos-3d/`](modelos-3d/) | Em elaboração |
+| Imagens | Fotos da torre e dos gráficos | [`imagens/`](imagens/) | Previsto |
+| Resultados | Exposição no IX IFTECH | [`resultados/`](resultados/) | Previsto |
 
 > [!NOTE]
-> **Possibilidades de replicação:** [Explique quais artefatos e orientações serão disponibilizados e como o material poderá ser reproduzido, utilizado ou adaptado por outras pessoas, escolas ou instituições. Indique também se a replicação exige equipamentos, materiais, conhecimentos técnicos ou condições específicas.]
-> **Créditos e licenças:** [Informe a autoria dos arquivos, modelos, códigos, imagens e materiais externos utilizados.]
+> **Possibilidades de replicação:** Ao término do projeto todos os materiais, modelos e códigos serão disponibilizados gratuitamente para replicação mediante a devida creditação, sem necessidade de licença ou autorização.
+
+> **Créditos:** Informe a autoria dos arquivos, modelos, códigos, imagens e materiais externos utilizados.
+
 
 ## Produções e participação em eventos
 
-- [Evento, publicação, apresentação ou produção relacionada]
+- Inscrição na XIV IFTECH Campus Paranavaí, em outubro de 2026.
  
 # Equipe
-[Apresente as pessoas e instituições envolvidas e descreva objetivamente a participação de cada uma. Acrescente ou exclua linhas conforme necessário.]
 
 | Categoria | Nome | Curso, setor ou instituição | Participação no projeto |
 |---|---|---|---|
-| Estudante | [Nome] | [Curso] | [Atividades e responsabilidades] |
-| Estudante | [Nome] | [Curso] | [Atividades e responsabilidades] |
-| Servidor | [Nome] | [Setor, área ou função institucional] | [Função no projeto] |
-| Servidor | [Nome] | [Setor, área ou função institucional] | [Função no projeto] |
-| Colaborador | [Nome] | [Instituição ou área de atuação] | [Forma de colaboração] |
-| Instituição parceira | [Nome da instituição] | [Município ou setor] | [Forma de participação no projeto] |
+| Estudante | Arthur Barbiratto Costa | Mecatrônica | Bolsista, estudante mentor do projeto |
+| Estudante | Augusto Germano Ramos Meyer | Mecatrônica | Voluntário, estudante mentor do projeto |
+| Estudante | Jheniffer de Brito Mariano | Mecatrônica | Desenvolvedor |
+| Estudante | Rafael da Silva Santos  | Mecatrônica | Desenvolvedor |
+| Estudante | Luzia Beatriz de Souza Pereira | Mecatrônica | Desenvolvedor |
+| Estudante | Beatriz Aiko Hogaha | Mecatrônica | Desenvolvedor |
+| Servidor | Eduardo Augusto Castelli Astrath | Docente E.B.T.T. – Núcleo da Base Nacional Comum/Física | Orientador/Demandante |
+| Servidor | Daniela Eloise Flôr  | Docente E.B.T.T. – Informação e Comunicação/Informática | Coordenadora |
 
 
 
